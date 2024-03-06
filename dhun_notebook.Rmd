@@ -1,0 +1,53 @@
+---
+title: "DATA-534 Project Personal Notebook"
+author: "Dhun Sheth"
+date: "2024-01-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### January 19th, 2024
+Today was our first meeting where we decided **to use the NASA api** for our R wrapper. I will be using the Asteroids - NeoWs API and the function will allow the user to search for near Earth objects based on start/end date. 
+
+We also worked on our proposal slide deck outlining each members work/part.
+
+### January 23rd, 2024
+Worked on making a test api call to the NEO api - was able to get a valid response but the data is super nested and need to figure out a way to unnest/make it usable. 
+
+### January 24th, 2024
+Made progress on cleaning and unnesting the data from an api call so I can use it. 
+
+Also made a check_date function to ensure the difference between start/end date is 7 days or less as that is an API contraint which needs to be met in order to make a successful call.
+
+### January 25th, 2024
+Made a commit to push NEO API wrapper R file to main branch after making neccessary functions. 
+
+To Do:
+1. add docstrings to functions
+2. make documentation for functions in readme
+3. create unit test file for functions
+4. connect to travis CI or github actions
+
+### January 26th 
+Completed the unit test file and all tests were successful. 
+
+**Key Decision:** I could not use Travis CI because my free account had expired so I instead opted to implement CI via github actions. 
+
+### January 28th
+Created a vignette for the NEO function API. 
+
+We worked on a software licence, added code of conduct and contributions documents which we all agreed to and would follow.
+
+Updated the README file to outline how to use the function.
+
+### Feburary 4th
+Came together to bring all function wrappers in the main branch. 
+
+Updated test file to contain all test cases for all 3 functions/API's.
+
+Worked on presentation slides.
+
+Added all documentation/vignettes. 
